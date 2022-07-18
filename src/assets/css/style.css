@@ -1,0 +1,143 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+}
+
+/* header, main nav */
+.cover{
+    background-image: url(/src/assets/img/cover-mice.jpg);
+    background-size: cover;
+    padding: 50px;
+}
+header a {
+    text-decoration: none;
+    color: #000;
+}
+header h1 {
+    display: flex;
+    justify-content: center;
+}
+header nav {
+    background: #10b3b8;
+    margin: 0 auto;
+    
+    width: 100%;
+}
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-inline-start: 0px;
+}
+header nav li{
+    list-style: none;
+}
+header nav a {
+    font-size: 14px;
+    display: block;
+    padding: 20px;
+    color: rgb(0, 0, 0);
+}
+header nav a:hover {
+    color: rgb(243, 233, 226);
+    font-weight: 900;
+}
+
+/* content */
+main h2 {
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 90%;
+    padding: 5px;
+}
+
+main .content {
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 90%;
+    padding: 5px;
+    font-size: 14px;
+}
+main a {
+    color: #10b3b8;
+    font-weight: 700;
+}
+
+/* Home */
+.illustration{
+    display: flex;
+    justify-content: center;
+}
+.illustration img {
+    width: 80%;
+}
+
+/* About */
+.avatar{
+    display: flex;
+    justify-content: center;
+}
+main h2 img {
+    border-radius: 50%;
+}
+
+/* My projects */
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+article {
+    padding: 30% 10%;
+    max-width: 90%;
+}
+.project01 {
+    background-image: url(/src/assets/img/myth.jpg);
+    background-size: cover;
+}
+.project02 {
+    background-image: url(/src/assets/img/kimvstrump.jpg);
+    background-size: cover;
+}
+.project03 {
+    background-image: url(/src/assets/img/3Dbreakfast.jpg);
+    background-size: cover;
+}
+.project04 {
+    background-image: url(/src/assets/img/Aquafina.jpg);
+    background-size: cover;
+}
+
+/* Contact */
+.content li{
+    list-style: none;
+}
+
+/********** MOBILE FIRST *********/
+
+@media only screen and (min-width: 650px) {
+    .cover{
+        background-image: url(/src/assets/img/cover-mice.jpg);
+        background-size: 50%;
+        padding: 100px;
+    }
+
+    .illustration img {
+        width: 35%;
+    }
+
+    section {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 0px;
+    }
+    article {
+        padding: 15% 24%;
+    }
+}
